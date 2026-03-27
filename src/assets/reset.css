@@ -1,0 +1,86 @@
+/* CSS DIRECTORY
+  1. GLOBAL
+  2. MEDIA
+  3. FORM CONTROLS
+  4. TYPOGRAPHY
+  5. REACT
+*/
+
+/* || GLOBAL */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
+
+  &:not(dialog) {
+    margin: 0;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  tab-size: 4;
+}
+
+/* || MEDIA */
+
+canvas,
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* || FORM CONTROLS */
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+input:is([type='checkbox'], [type='radio']),
+select {
+  cursor: pointer;
+}
+
+/* || TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* || REACT */
+
+#root {
+  isolation: isolate;
+}
