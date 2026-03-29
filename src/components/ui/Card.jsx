@@ -22,8 +22,8 @@ export function Card({ id, handler }) {
       onClick={handler}
       onKeyDown={handler}
     >
-      <h2>{pokemon}</h2>
       <img src={spriteUrl} alt="" width={160} height={160} />
+      <h2>{pokemon}</h2>
     </article>
   );
 }
