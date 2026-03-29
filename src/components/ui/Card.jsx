@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export function Card({ id }) {
+export function Card({ id, handler }) {
   const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
   const [pokemon, setPokemon] = useState([]);
@@ -29,7 +29,13 @@ export function Card({ id }) {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div className="card" data-pokemon={pokemon}>
+    // biome-ignore lint/a11y/noStaticElementInteractions: This card is interactive
+    <div
+      className="card"
+      data-pokemon={pokemon}
+      onClick={handler}
+      onKeyDown={handler}
+    >
       <h2>{pokemon}</h2>
       <img src={spriteUrl} alt={pokemon} width={160} height={160} />
     </div>
