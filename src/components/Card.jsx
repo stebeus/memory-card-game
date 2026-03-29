@@ -5,8 +5,8 @@ export function Card({ id, handler }) {
   const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
   const [pokemon, setPokemon] = useState([]);
-  const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetchPokemon(id, setPokemon, setError, setIsLoading);
