@@ -16,8 +16,7 @@ export function Card({ id, handler }) {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    // biome-ignore lint/a11y/noStaticElementInteractions: This card is interactive
-    <div
+    <article
       className="card"
       data-pokemon={pokemon}
       onClick={handler}
@@ -25,6 +24,6 @@ export function Card({ id, handler }) {
     >
       <h2>{pokemon}</h2>
       <img src={spriteUrl} alt={pokemon} width={160} height={160} />
-    </div>
+    </article>
   );
 }
