@@ -4,6 +4,8 @@ import { fetchPokemon } from '@/api.js';
 import errorIcon from '@/assets/icons/error.svg';
 import loaderIcon from '@/assets/icons/poke-ball.svg';
 
+import './index.css';
+
 export function Card({ id, handler }) {
   const [pokemon, setPokemon] = useState();
   const [isLoading, setIsLoading] = useState(true);

@@ -1,4 +1,5 @@
 import { BASE_URL } from '@/constants.js';
+import './index.css';
 
 export function Icon({ fileName, alt }) {
   const url = `${BASE_URL}src/assets/icons/${fileName}.svg`;

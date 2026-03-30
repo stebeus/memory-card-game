@@ -1,6 +1,8 @@
 import { Icon } from '@/components/__ui__/Icon/index.jsx';
 import { Link } from '@/components/__ui__/Link/index.jsx';
 
+import './index.css';
+
 export function Footer() {
   return (
     <footer>

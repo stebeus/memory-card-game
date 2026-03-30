@@ -1,4 +1,5 @@
 import { BASE_URL } from '@/constants.js';
+import './index.css';
 
 export function Link({ to = BASE_URL, children }) {
   const protocol = 'https://';
