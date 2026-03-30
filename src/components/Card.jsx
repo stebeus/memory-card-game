@@ -39,8 +39,8 @@ export function Card({ id, handler }) {
         className={imgClassName}
         src={imgUrl}
         alt=""
-        width={160}
-        height={160}
+        width={100}
+        height={100}
       />
       <h2>{title}</h2>
     </article>
