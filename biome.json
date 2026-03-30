@@ -27,7 +27,7 @@
             "patterns": [
               {
                 "group": "../**/*",
-                "message": "Relative imports nested more than one level are not allowed. Use absolute paths (`@/`) instead."
+                "message": "Avoid relative imports deeper than one level. Use `@/` absolute paths instead."
               }
             ]
           }
