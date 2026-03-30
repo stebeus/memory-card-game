@@ -16,6 +16,10 @@
   font-display: swap;
 }
 
+:root {
+  color-scheme: light dark;
+}
+
 #root {
   display: grid;
   grid-template-rows: auto 1fr auto;
