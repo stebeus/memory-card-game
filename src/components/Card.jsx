@@ -26,7 +26,7 @@ export function Card({ id, handler }) {
   }
 
   if (isLoading) setContent('loader', loaderIcon, 'Loading...');
-  if (error) setContent('error', errorIcon, `Error: ${error}`);
+  if (error != null) setContent('error', errorIcon, `Error: ${error}`);
 
   return (
     <article
