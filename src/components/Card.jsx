@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
-
 import { fetchPokemon } from '@/api.js';
 
-import { ErrorMessage } from './ui/ErrorMessage.jsx';
-import { Loader } from './ui/Loader.jsx';
+import errorIcon from '@/assets/icons.svg#error';
+import loaderIcon from '@/assets/icons.svg#poke-ball';
 
 export function Card({ id, handler }) {
   const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
@@ -16,8 +15,18 @@ export function Card({ id, handler }) {
     fetchPokemon(id, setPokemon, setError, setIsLoading);
   }, [id]);
 
-  if (isLoading) return <Loader />;
-  if (error) return <ErrorMessage message={error} />;
+  const [imgClassName, setImgClassName] = useState('sprite');
+  const [imgUrl, setImgUrl] = useState(spriteUrl);
+  const [title, setTitle] = useState(pokemon);
+
+  function setContent(imgClassName, imgUrl, title) {
+    setImgClassName(imgClassName);
+    setImgUrl(imgUrl);
+    setTitle(title);
+  }
+
+  if (isLoading) setContent('loader', loaderIcon, 'Loading...');
+  if (error) setContent('error', errorIcon, `Error: ${error}`);
 
   return (
     <article
@@ -26,8 +35,14 @@ export function Card({ id, handler }) {
       onClick={handler}
       onKeyDown={handler}
     >
-      <img src={spriteUrl} alt="" width={160} height={160} />
-      <h2>{pokemon}</h2>
+      <img
+        className={imgClassName}
+        src={imgUrl}
+        alt=""
+        width={160}
+        height={160}
+      />
+      <h2>{title}</h2>
     </article>
   );
 }
