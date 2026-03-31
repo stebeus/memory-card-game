@@ -9,6 +9,7 @@
 
   .copyright::after {
     margin: var(--space-sm);
+    color: var(--color-border);
     content: '|';
   }
 }
