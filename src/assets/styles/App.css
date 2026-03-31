@@ -12,6 +12,7 @@ img {
     padding: var(--space-xs) var(--space-sm);
     margin-bottom: var(--space-sm);
     color: var(--color-contentMuted);
+    text-align: center;
     background-color: var(--color-base);
   }
 }
