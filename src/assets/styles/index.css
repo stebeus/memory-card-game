@@ -36,7 +36,7 @@
   --fw-regular: 400;
   --fw-bold: 700;
   --font-body: var(--fw-regular) var(--fs-md) var(--ff);
-  --font-heading: var(--fw-bold) var(--fs-md) var(--ff-bold);
+  --font-heading: var(--fw-bold) var(--fs-lg) var(--ff-bold);
   --font-logo: var(--fw-bold) var(--fs-xl) var(--ff-display);
 
   color-scheme: light dark;
