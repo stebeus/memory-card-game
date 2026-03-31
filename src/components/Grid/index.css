@@ -1,9 +1,25 @@
 @scope (.grid) {
   :scope {
+    --size-min: 148px;
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(var(--size-min), 1fr));
     gap: var(--space-sm) var(--space-xs);
-    margin: 0 auto;
+  }
+
+  @media (width >= 720px) {
+    :scope {
+      gap: var(--space-md) var(--space-sm);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (width >= 1000px) and (height > 640px) {
+    :scope {
+      --size-min: 200px;
+      gap: var(--space-lg) var(--space-md);
+      max-width: 1000px;
+    }
   }
 }

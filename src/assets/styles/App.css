@@ -1,13 +1,30 @@
 @scope (main) {
   :scope {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    justify-content: center;
     padding: var(--space-xs);
+    padding-bottom: var(--space-sm);
     background-color: var(--color-baseSecondary);
   }
 
+  @media (width >= 640px) {
+    :scope {
+      gap: var(--space-lg);
+    }
+  }
+
+  @media (height > 640px) {
+    :scope {
+      gap: var(--space-xxl);
+    }
+  }
+
   p {
+    align-self: center;
     width: fit-content;
     padding: var(--space-xs) var(--space-sm);
-    margin: 0 auto var(--space-sm);
     color: var(--color-contentMuted);
     text-align: center;
     background-color: var(--color-base);

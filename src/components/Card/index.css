@@ -1,5 +1,8 @@
 @scope (.card) {
   :scope {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
     padding: var(--space-xs);
     padding-bottom: var(--space-sm);
     text-align: center;
@@ -21,6 +24,13 @@
     }
   }
 
+  @media (width >= 640px) {
+    :scope {
+      gap: var(--space-sm);
+      padding: var(--space-lg);
+    }
+  }
+
   &:has(.error) {
     h2 {
       font-size: var(--fs-md);
@@ -30,7 +40,6 @@
   .img-wrapper {
     align-content: center;
     min-height: 8.25rem;
-    margin-bottom: var(--space-xs);
     background-color: var(--color-baseSecondary);
   }
 

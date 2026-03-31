@@ -6,6 +6,13 @@
     gap: var(--space-xxs);
   }
 
+  @media (width >= 640px) {
+    :scope {
+      flex-wrap: nowrap;
+      gap: var(--space-xs);
+    }
+  }
+
   p {
     display: flex;
     flex-basis: 100%;
