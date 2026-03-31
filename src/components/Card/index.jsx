@@ -37,13 +37,15 @@ export function Card({ id, handler }) {
       onClick={handler}
       onKeyDown={handler}
     >
-      <img
-        className={imgClassName}
-        src={imgUrl}
-        alt=""
-        width={64}
-        height={64}
-      />
+      <div className="img-wrapper">
+        <img
+          className={imgClassName}
+          src={imgUrl}
+          alt=""
+          width={64}
+          height={64}
+        />
+      </div>
       <h2>{title}</h2>
     </article>
   );
