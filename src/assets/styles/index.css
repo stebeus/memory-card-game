@@ -37,12 +37,12 @@
   );
   --color-shadowLighter: oklch(
     from var(--color-shadow) l c h /
-    calc(alpha - 0.15)
+    calc(alpha - 0.2)
   );
 
   --shadow-darker: 0 var(--space-xxs) var(--color-shadowDarker);
   --shadow-medium: 0 var(--space-xxs) var(--color-shadow);
-  --shadow-lighter: 0 var(--space-sm) var(--color-shadowLighter);
+  --shadow-lighter: 0 0.875rem var(--color-shadowLighter);
 
   /* Spacing */
   --space-xxs: 0.25rem;
