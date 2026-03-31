@@ -1,0 +1,14 @@
+@scope (footer) {
+  :scope {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-sm);
+    color: var(--color-contentMuted);
+    background-color: var(--color-base);
+  }
+
+  .copyright::after {
+    margin: var(--space-sm);
+    content: '|';
+  }
+}
