@@ -42,7 +42,7 @@
 
   --shadow-darker: 0 var(--space-xxs) var(--color-shadowDarker);
   --shadow-medium: 0 var(--space-xxs) var(--color-shadow);
-  --shadow-lighter: 0 var(--space-xs) var(--color-shadowLighter);
+  --shadow-lighter: 0 var(--space-sm) var(--color-shadowLighter);
 
   /* Spacing */
   --space-xxs: 0.25rem;
