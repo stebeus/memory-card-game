@@ -1,0 +1,17 @@
+img {
+  image-rendering: pixelated;
+}
+
+@scope (main) {
+  :scope {
+    padding: var(--space-xs);
+    background-color: var(--color-baseSecondary);
+  }
+
+  p {
+    padding: var(--space-xs) var(--space-sm);
+    margin-bottom: var(--space-sm);
+    color: var(--color-contentMuted);
+    background-color: var(--color-base);
+  }
+}
