@@ -15,10 +15,12 @@
     padding: var(--space-xxs) var(--space-xs);
     color: var(--color-contentHeaderMuted);
     background-color: var(--color-accentDarker);
+    box-shadow: inset var(--shadow-darker);
   }
 
   .score {
     font: var(--font-heading);
     color: var(--color-contentHeader);
+    text-shadow: var(--shadow-darker);
   }
 }

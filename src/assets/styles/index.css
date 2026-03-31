@@ -28,7 +28,21 @@
   --color-contentHeaderMuted: oklch(
     from var(--color-accent) calc(l + 0.25) calc(c - 0.18) h
   );
-  --color-border: oklch(0 0 0 / 0.25);
+
+  /* Shadows */
+  --color-shadow: oklch(0 0 0 / 0.25);
+  --color-shadowDarker: oklch(
+    from var(--color-shadow) l c h /
+    calc(alpha + 0.25)
+  );
+  --color-shadowLighter: oklch(
+    from var(--color-shadow) l c h /
+    calc(alpha - 0.15)
+  );
+
+  --shadow-darker: 0 var(--space-xxs) var(--color-shadowDarker);
+  --shadow-medium: 0 var(--space-xxs) var(--color-shadow);
+  --shadow-lighter: 0 var(--space-xs) var(--color-shadowLighter);
 
   /* Spacing */
   --space-xxs: 0.25rem;

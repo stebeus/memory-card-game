@@ -8,10 +8,12 @@
     font-weight: var(--fw-bold);
     color: var(--color-contentHeader);
     background-color: var(--color-accent);
+    border-bottom: var(--space-xxs) solid var(--color-shadow);
   }
 
   .logo {
     font: var(--font-logo);
+    text-shadow: var(--shadow-darker);
   }
 
   a {

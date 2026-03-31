@@ -6,9 +6,17 @@
     text-transform: capitalize;
     cursor: pointer;
     background-color: var(--color-base);
-    transition: transform var(--duration-short);
+
+    border: 0 solid var(--color-shadowLighter);
+    border-top: none;
+    box-shadow: var(--shadow-medium);
+
+    transition: all var(--duration-short);
 
     &:hover {
+      border-width: 2px;
+      box-shadow: var(--shadow-lighter);
+
       transform: scale(1.125) translateY(-1rem);
     }
   }

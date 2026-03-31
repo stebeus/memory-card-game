@@ -15,5 +15,6 @@ img {
     color: var(--color-contentMuted);
     text-align: center;
     background-color: var(--color-base);
+    box-shadow: var(--shadow-medium);
   }
 }
