@@ -78,6 +78,10 @@
     --color-base: oklch(0.3 0 0);
     --color-content: oklch(0.95 0 0);
     --color-contentMuted: oklch(from var(--color-content) calc(l - 0.15) c h);
+    --color-shadowLighter: oklch(
+      from var(--color-shadow) l c h /
+      calc(alpha - 0.16)
+    );
   }
 }
 
