@@ -6,6 +6,11 @@
     text-transform: capitalize;
     cursor: pointer;
     background-color: var(--color-base);
+    transition: transform 250ms ease;
+
+    &:hover {
+      transform: scale(1.125) translateY(-1rem);
+    }
   }
 
   &:has(.error) {
