@@ -1,6 +1,7 @@
 a {
   color: currentColor;
   text-decoration-color: transparent;
+  transition: text-decoration-color 250ms ease;
 
   &:hover {
     text-decoration-color: currentColor;
