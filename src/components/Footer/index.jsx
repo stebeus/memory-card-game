@@ -6,7 +6,7 @@ import './index.css';
 export function Footer() {
   return (
     <footer>
-      <p>
+      <p className="copyright">
         © Stebeus 2026.{' '}
         <Link to="https://opensource.org/license/mit">MIT License</Link>
       </p>
